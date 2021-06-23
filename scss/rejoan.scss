@@ -1,0 +1,227 @@
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400p;
+
+@mixin resp($width) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+
+#card-parent {
+    .active-card {
+        transition: all 1s;
+        position: relative;
+        z-index: 500;
+        .cross-btn {
+            display: block;
+            position: absolute;
+            left: 40px;
+            top: 20px;
+            width: 30px;
+            img {
+                width: 100%;
+            }
+        }
+        // cards
+        @media screen and (min-width: 575px) {
+            &:nth-child(1) {
+                transform: translateX(-0%);
+            }
+            &:nth-child(2) {
+                transform: translateX(-100%);
+            }
+            &:nth-child(3) {
+                transform: translateX(-200%);
+            }
+        }
+        .inner-card {
+            transform: width 1s;
+            @media only screen and (min-width: 575px) {
+                width: 540px;
+            }
+            @media only screen and (min-width: 767px) {
+                width: 690px;
+            }
+            @media only screen and (min-width: 992px) {
+                width: 925px;
+            }
+            @media only screen and (min-width: 1200px) {
+                width: 1110px;
+            }
+            .luy-content {
+                transition: all 0.8s;
+                max-height: fit-content;
+                @media only screen and (max-width: 575px) {
+                    max-height: fit-content;
+                }
+                // after
+                &::after {
+                    background-color: transparent;
+                    background-image: none;
+                }
+            }
+        }
+    }
+    // btn
+    .open {
+        display: block;
+    }
+    .closed {
+        display: none;
+    }
+}
+
+// cross btn
+.cross-btn {
+    display: none;
+    cursor: pointer;
+}
+
+// changes for table
+tbody {
+    tr {
+        td {
+            color: #a7a1ae;
+            &:first-child {
+                color: #fb667a;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// border color
+.table thead th,
+table,
+.table-bordered td,
+.table-bordered th {
+    border: 2px solid #1f2739;
+}
+.table-bordered {
+    border: 2px solid #1f2739;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #323c50;
+}
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #2c3446;
+}
+
+// slider style
+#card-slider {
+    margin-top: 140px;
+    .swiper-wrapper {
+        .swiper-slide {
+            overflow: hidden;
+            border-radius: 25px;
+            // child background color
+            &:nth-child(even) {
+                // -------------------------------------------------------
+                //  You can change slider background color from here
+                // ------------------------------------------------------
+                // background-color: #101923; those color you provided me
+                background-color: #65111ce7;
+            }
+            &:nth-child(odd) {
+                // -------------------------------------------------------
+                //  You can change slider background color from here
+                // ------------------------------------------------------
+                // background-color: #283f58; those color you provided me
+                background-color: #3f0e4edc;
+            }
+            .teader-inner-col {
+                background-color: transparent;
+                // padding: 115px 130px 145px 130px;
+                padding-bottom: 140px;
+                @include resp($lg) {
+                    padding: 115px 100px 140px 115px;
+                }
+                border-radius: 20px;
+                justify-content: space-around !important;
+                img {
+                }
+                .right {
+                    @include resp($sm) {
+                        width: 80%;
+                    }
+                    @include resp($md) {
+                        width: 75%;
+                    }
+                    @include resp($xl) {
+                        width: 70%;
+                    }
+                }
+            }
+            .slide-bg {
+                padding: 2rem;
+                background-color: rgba(0, 0, 0, 0.2);
+                @include resp($md) {
+                    width: 55%;
+                }
+                width: 30%;
+                transform: skewX(7deg);
+                position: absolute;
+                height: 100%;
+                left: -10%;
+                padding-left: 20rem;
+                transform-origin: 0 100%;
+
+                // after background
+                &::before {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background-color: inherit;
+                    pointer-events: none;
+                    transform: skewX(10deg);
+                }
+            }
+        }
+    }
+    // slider btn
+    .swiper-button-next {
+        display: none;
+        transform: translate(-30px, -40px);
+        @include resp($md) {
+            display: block;
+        }
+    }
+    .swiper-button-prev {
+        display: none;
+        transform: translate(30px, -40px);
+        @include resp($md) {
+            display: block;
+        }
+    }
+    .swiper-scrollbar {
+        transform: translateY(-25px);
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        position: initial;
+    }
+    .swiper-pagination {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        transform: translateY(-65px);
+        .swiper-pagination-bullet {
+            width: unquote(100 / 3 + "%");
+            border-top: 3px solid lighten($color: white, $amount: 40);
+            background-color: transparent;
+            border-radius: 0px;
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+}

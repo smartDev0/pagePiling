@@ -1,0 +1,402 @@
+@keyframes viewpint_0 {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.viewpint_0,
+.viewpint_9 {
+    animation-name: viewpint_0;
+    animation-duration: 0.8s;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+@keyframes viewpint_1 {
+    from {
+        transform: translateX(100%)
+    }
+
+    to {
+        transform: translateX(0)
+    }
+}
+
+.viewpint_1,
+.viewpint_10 {
+    animation-name: viewpint_1;
+    animation-duration: 0.8s;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+@keyframes viewpint_3 {
+    from {
+        transform: translateY(50%)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+.viewpint_3,
+.viewpint_4,
+.viewpint_5,
+.viewpint_6,
+.viewpint_7,
+.viewpint_8,
+.viewpint_12,
+.viewpint_15,
+.viewpint_18 {
+    animation-name: viewpint_3;
+    animation-duration: 0.8s;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+@keyframes viewpint_4 {
+    from {
+        transform: translateX(-30%)
+    }
+
+    to {
+        transform: translateX(0)
+    }
+}
+
+.viewpint_13,
+.viewpint_16,
+.viewpint_19 {
+    animation-name: viewpint_4;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+@keyframes viewpint_5 {
+    from {
+        transform: translateX(30%)
+    }
+
+    to {
+        transform: translateX(0)
+    }
+}
+
+.viewpint_14,
+.viewpint_17,
+.viewpint_20 {
+    animation-name: viewpint_5;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+body {
+
+    position: relative;
+    background: #090A0F;
+
+}
+
+#home_hero {
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(#1B2735, #090A0F) !important;
+
+}
+
+#section-two {
+    text-align: left;
+}
+
+section {
+    overflow: hidden;
+}
+
+#home_hero .container {
+    z-index: 1;
+}
+
+.heading {
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Poppin', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+.h1 {
+    font-size: 68px;
+    font-weight: bold;
+}
+
+.h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.h3 {
+    font-size: 21px;
+}
+
+.btn-default {
+    font-family: "Poppins", Sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: transparent;
+    background-image: linear-gradient(150deg, #06B3C9 -20%, #056EA3 130%);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 4px 5px 10px 0px rgb(0 0 0 / 19%);
+    padding: 8px 25px;
+}
+
+.btn-outline-light {
+    font-family: "Poppins", Sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: transparent;
+
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 4px 5px 10px 0px rgb(0 0 0 / 19%);
+    padding: 8px 25px;
+}
+
+.btn-outline-light:hover {
+    background-image: linear-gradient(150deg, #06B3C9 -20%, #056EA3 130%);
+    border: 0;
+}
+
+.buttons-wrap {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cosmonaut_1 {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    z-index: 0;
+    top: 50%;
+}
+
+.cosmonaut_2 {
+    max-height: 100%;
+    max-width: 300px;
+    margin: auto;
+    width: 100%;
+}
+
+.anime-ele:not(.visible),
+.anime-ele-ele:not(.visible) {
+    opacity: 0;
+}
+
+.anime-ele.visible,
+.anime-ele-ele,
+visible {
+    opacity: 1;
+}
+
+.anime-ele,
+.anime-ele-ele {
+    transition: all 0.8s ease-in-out;
+}
+
+.luy-inner-col {
+    background-color: #101923;
+    padding: 1.5rem;
+    transition: all 0.4s;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.luy-inner-col .luy-content:after {
+    background-image: linear-gradient(transparent 40%, #101923, #101923);
+}
+
+.luy-inner-col:hover {
+    background-color: #101923;
+    box-shadow: 0 0 35px 6px #101923;
+}
+
+.teader-inner-col {
+    background-color: #1B2735;
+    padding: 1.5rem;
+    transition: all 0.4s;
+    height: 100%;
+}
+
+.teader-inner-col:hover {
+    box-shadow: 0 0 35px 6px #101923;
+    background: #101923;
+}
+
+.teader-inner-col:hover .luy-content:after {
+    background-image: linear-gradient(transparent 40%, #101923, #101923);
+}
+
+.teader-icon {
+    max-width: 100px;
+}
+
+.hr-droid {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    max-width: 300px;
+}
+
+.hr-line {
+    width: 100%;
+    position: relative;
+    margin: 15px;
+    border-bottom: 2px solid white;
+}
+
+.hr-droid img {
+    width: 25px;
+}
+
+.luy-image {
+    max-width: 200px;
+    margin-bottom: 10px;
+    transition: all 0.4s;
+}
+
+@media only screen and (min-width: 576px) {
+    .luy-image {
+        width: 100%;
+    }
+}
+
+.luy-image:hover {
+    transform: scale(1.02);
+}
+
+.luy-content {
+    max-height: 105px;
+    overflow: hidden;
+    transition: all 0.6s;
+    position: relative;
+    font-size: 14px;
+}
+
+.luy-content p {
+    margin-bottom: 6px;
+}
+
+.luy-content:after {
+    content: "";
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(transparent 40%, rgb(27 39 53), rgb(27 39 53));
+    transition: all 0.4s;
+}
+
+.luy-content.opened {
+    max-height: 1100px;
+}
+
+.luy-collaps {
+    position: relative;
+    z-index: 2;
+    margin-top: 15px;
+    color: #f7607d;
+    cursor: pointer;
+}
+
+.text-danger {
+    color: #F87963 !important
+}
+
+.text-primary {
+    color: #00FFFF !important
+}
+
+.text-success {
+    color: #00DFA2 !important
+}
+
+.table th {
+    /* color: #F1BE33; */
+    /* rejoan  */
+    color: #FB667A;
+}
+
+.table-container {
+    display: none;
+}
+
+.table-readmore {
+    font-size: 16px;
+    padding: 10px 60px;
+    margin-top: 15px;
+}
+
+@media (max-width:767px) {
+    #home_hero {
+        height: 100vh;
+    }
+
+    .cosmonaut_1 {
+        height: unset !important;
+        right: 0 !important;
+        top: 65% !important;
+        width: 120%;
+    }
+
+    .buttons-wrap {
+        justify-content: center;
+    }
+
+    .h1 {
+        font-size: 44px;
+    }
+
+    .h2 {
+        font-size: 24px;
+    }
+
+    .h3 {
+        font-size: 19x;
+    }
+
+    .row-eq-height>.col-sm-4 {
+        margin-bottom: 20px;
+    }
+
+    .cosmonaut_2 {
+        max-width: 200px;
+        margin-bottom: 30px;
+    }
+
+    .table td,
+    .table th {
+        font-size: 12px;
+    }
+
+    #home_four .col-sm-4 {
+        margin-bottom: 30px;
+    }
+
+}
+
+.luy-content.opened:after {
+    display: none;
+}
